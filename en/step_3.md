@@ -1,10 +1,28 @@
---- challenge ---
+<h2 class="c-project-heading--task">Add more players</h2>
 
-## Challenge: Adding more players
-Can you add more players to your list? You can add as many players as you like, but make sure that there is an __even__ number of players.
+--- task ---
+Grow your player list and print one name from it.
+--- /task ---
 
-You can also change the names of the first 2 players if you prefer.
+--- task ---
+Add more names to the list and print just one of them using an index.
 
-Can you add code to print __just one__ of your new players?
+<div class="c-project-code">
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 1-2
+---
+players = ['Harry', 'Hermione', 'Neville', 'Ginny', 'Luna', 'Ron']  # add more players (keep it even!)
+print(players[4])  # prints just one player from the list
+--- /code ---
+</div>
+--- /task ---
 
---- /challenge ---
+--- task ---
+### Test
+Run your program. You should see **one name** printed (the item at index `4`).
+--- /task ---

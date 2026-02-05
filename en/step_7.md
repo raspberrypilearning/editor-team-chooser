@@ -1,100 +1,53 @@
-## Files
-
-You can use a file to store your list of players.
+<h2 class="c-project-heading--task">Load players from a file</h2>
 
 --- task ---
+Read player names from `players.txt` instead of writing them inside your code.
+--- /task ---
 
-Click **Add file** and create a new file called `players.txt`.
-
-![Add file button shown beneath the Project files menu](images/Add_file.png)
+--- task ---
+Create a file called `players.txt` and put one player name on each line.
 
 --- /task ---
 
 --- task ---
+Update your code to read names from the file with `splitlines()`.
 
-+ Add your players to your new file. Make sure that there is no blank line after your last player.
-
-![screenshot showing the names in players.txt](images/players_file.png)
-
---- /task ---
-
---- task ---
-
-Change your `players` list so that it is empty.
-
+<div class="c-project-code">
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 3
+line_highlights: 3-6
 ---
 from random import choice
 
-players = []
-
-team_A = []
-team_B = []
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-Open your `players.txt` file (the `'r'` means read-only).
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 1
-line_highlights: 4
----
-from random import choice
-
-players = []
+players = []  # will be filled from the file
 file = open('players.txt', 'r')
+players = file.read().splitlines()  # turns lines into a list
+file.close()
 
 team_A = []
 team_B = []
 
---- /code ---
+while len(players) > 0:
 
+    player_A = choice(players)
+    team_A.append(player_A)
+    players.remove(player_A)
+
+    player_B = choice(players)
+    team_B.append(player_B)
+    players.remove(player_B)
+
+print('Team A:', team_A)
+print('Team B:', team_B)
+--- /code ---
+</div>
 --- /task ---
 
 --- task ---
-
-Read the list from the file and add to your `players` list. (The `splitlines` code means that every line in the file is a new item in the `players` list).
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 1
-line_highlights: 5
----
-from random import choice
-
-players = []
-file = open('players.txt', 'r')
-players = file.read().splitlines()
-
-team_A = []
-team_B = []
-
---- /code ---
-
+### Test
+Run the program. If you change the names in `players.txt`, your teams should change too.
 --- /task ---
-
---- task ---
-
-If you test your code, it should work exactly the same as before. However, now it's much easier to add players to your `players.txt` file.
-
---- /task ---
-
-
-

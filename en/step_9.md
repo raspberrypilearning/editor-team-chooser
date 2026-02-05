@@ -1,24 +1,57 @@
---- challenge ---
-## Challenge: Random team names
-Can you give both of your teams a random team name?
+<h2 class="c-project-heading--task">Add random team names</h2>
 
-You can create a list called `team_names` containing the names to choose from.
+--- task ---
+Give each team a random team name.
+--- /task ---
 
-You can then choose (and display) a random name for each team.
+--- task ---
+Create a `team_names` list and choose a different random name for each team.
 
+<div class="c-project-code">
 --- code ---
 ---
 language: python
 filename: main.py
-line_numbers: false
-line_number_start: 
-line_highlights: 
+line_numbers: true
+line_number_start: 1
+line_highlights: 8-12,29-33
 ---
-Here are your teams:
+from random import choice
 
-Wasps ['Harry', 'Neville', 'Ginny']
-Pythons ['Hermione', 'Luna']
+players = []
+file = open('players.txt', 'r')
+players = file.read().splitlines()
+file.close()
 
+team_names = ['Alligators', 'Gorillas', 'Eagles', 'Pythons']  # names to choose from
+team_name_A = choice(team_names)  # pick a name for Team A
+team_names.remove(team_name_A)  # remove it so Team B can't use it
+team_name_B = choice(team_names)  # pick a different name for Team B
+
+team_A = []
+team_B = []
+
+while len(players) > 0:
+
+    player_A = choice(players)
+    team_A.append(player_A)
+    players.remove(player_A)
+
+    if players == []:
+        break
+
+    player_B = choice(players)
+    team_B.append(player_B)
+    players.remove(player_B)
+
+print('\nHere are your teams:\n')
+print(team_name_A, team_A)
+print(team_name_B, team_B)
 --- /code ---
+</div>
+--- /task ---
 
---- /challenge ---
+--- task ---
+### Test
+Run your program a few times. The team names should change, and **Team A and Team B should never get the same name**.
+--- /task ---
