@@ -1,173 +1,31 @@
-## Random players
-
-Let's choose random players!
+<h2 class="c-project-heading--task">Choose a random player</h2>
 
 --- task ---
+Pick a random player from your list using `choice`.
+--- /task ---
 
-To be able to get a random player from your `players` list, first you'll need to import the `choice` part of the `random` module.
+--- task ---
+Import `choice` and use it to select a random player.
 
+<div class="c-project-code">
 --- code ---
 ---
 language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 1
+line_highlights: 1,4
 ---
-from random import choice
+from random import choice  # lets you pick a random item from a list
 
-players = ['Harry', 'Hermione', 'Neville', 'Ginny']
-print(players)
-
-print(players[0])
-print(players[1])
-
+players = ['Harry', 'Hermione', 'Neville', 'Ginny', 'Luna', 'Ron']
+player = choice(players)  # choose one random player
+print(player)
 --- /code ---
-
+</div>
 --- /task ---
 
 --- task ---
-
-To get a random player, you can use `choice`. (You can also delete the code to print individual players.)
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 1
-line_highlights: 6
----
-from random import choice
-
-players = ['Harry', 'Hermione', 'Neville', 'Ginny']
-print(players)
-
-print(choice(players))
-
---- /code ---
-
+### Test
+Run your program a few times. You should see **different names** appear.
 --- /task ---
-
---- task ---
-
-Test your `choice` code a few times and you should see a different player being chosen each time.
-
---- /task ---
-
---- task ---
-
-You can also create a new variable called `playerA`, and use it to store your random player.
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 1
-line_highlights: 6-7
----
-from random import choice
-
-players = ['Harry', 'Hermione', 'Neville', 'Ginny']
-print(players)
-
-player_A = choice(players)
-print(player_A)
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-You'll need a new list to store all of the players in team A. To start with, this list should be empty.
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 1
-line_highlights: 6
----
-from random import choice
-
-players = ['Harry', 'Hermione', 'Neville', 'Ginny']
-print(players)
-
-team_A = []
-
-player_A = choice(players)
-print(player_A)
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-You can now add your randomly chosen player to `teamA`. To do this, you can use `teamA.append` (__append__ means add to the end).
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 8
-line_highlights: 10
----
-player_A = choice(players)
-print(player_A)
-team_A.append(player_A)
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-Now that your player has been chosen, you can remove them from your list of `players`.
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 8
-line_highlights: 11
----
-player_A = choice(players)
-print(player_A)
-team_A.append(player_A)
-players.remove(player_A)
-
---- /code ---
-
---- /task ---
-
---- task ---
-
-Test this code by adding a `print` command, to show the `players` left to choose from.
-
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 8
-line_highlights: 12
----
-player_A = choice(players)
-print(player_A)
-team_A.append(player_A)
-players.remove(player_A)
-print('Players left: ', players)
-
---- /code ---
-
---- /task ---
-
-
-
-
