@@ -17,9 +17,17 @@ line_number_start: 1
 line_highlights: 1-2
 ---
 players = ['Harry', 'Hermione', 'Neville', 'Ginny', 'Luna', 'Ron']  # add more players (keep it even!)
-print(players[4])  # prints just one player from the list
+print(players[2])  # prints just one player from the list
 --- /code ---
 </div>
+
+<div class="c-project-callout c-project-callout--tip">
+Tip
+
+Lists start at index 0, not 1 (so `players[0]` is the first item, and `players[1]` is the second and so on.)
+
+</div>
+
 --- /task ---
 
 --- task ---

@@ -34,3 +34,4 @@ steps:
 - title: Challenges
   completion:
   - external
+  challenge: true

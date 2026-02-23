@@ -14,7 +14,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 19-21
+line_highlights: 16-18
 ---
 from random import choice
 
