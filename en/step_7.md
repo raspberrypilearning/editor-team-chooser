@@ -5,12 +5,13 @@ Read player names from `players.txt` instead of writing them inside your code.
 --- /task ---
 
 --- task ---
-Create a file called `players.txt` and put one player name on each line.
+Create a file called `players.txt` and put one player name on each line. Make sure you have an **even number** of names!
 
 --- /task ---
 
+
 --- task ---
-Update your code to read names from the file with `splitlines()`.
+Update your code to read names from the file with `splitlines()`, by replacing the names list:
 
 <div class="c-project-code">
 --- code ---
@@ -23,9 +24,9 @@ line_highlights: 3-6
 ---
 from random import choice
 
-players = []  # will be filled from the file
-file = open('players.txt', 'r')
-players = file.read().splitlines()  # turns lines into a list
+players = []  # make a list called players
+file = open('players.txt', 'r')  #  Open the players.txt file
+players = file.read().splitlines()   # add lines from file into the list
 file.close()
 
 team_A = []

@@ -44,7 +44,6 @@ while len(players) > 0:
     team_B.append(player_B)
     players.remove(player_B)
 
-print('\nHere are your teams:\n')
 print(team_name_A, team_A)
 print(team_name_B, team_B)
 --- /code ---

@@ -14,13 +14,13 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 1,4
+line_highlights: 1,4-5
 ---
 from random import choice  # lets you pick a random item from a list
 
 players = ['Harry', 'Hermione', 'Neville', 'Ginny', 'Luna', 'Ron']
 player = choice(players)  # choose one random player
-print(player)
+print(player)  #  show the chosen player
 --- /code ---
 </div>
 --- /task ---
