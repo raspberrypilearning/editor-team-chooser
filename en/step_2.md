@@ -16,7 +16,7 @@ line_numbers: true
 line_number_start: 1
 line_highlights: 1-2
 ---
-players = ['Harry', 'Hermione', 'Neville', 'Ginny']  # a list of player names
+players = ['Aisha', 'Kai', 'Linh', 'Mateo']  # a list of player names
 print(players)  # check the list prints in the output
 --- /code ---
 </div>
@@ -24,5 +24,5 @@ print(players)  # check the list prints in the output
 
 --- task ---
 ### Test
-Run your program. You should see your list printed (including the square brackets and quotes).
+Run your program. You should see your list printed, for example `['Aisha', 'Kai', 'Linh', 'Mateo']`.
 --- /task ---

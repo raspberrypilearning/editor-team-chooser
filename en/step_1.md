@@ -1,7 +1,7 @@
 <h2 class="c-project-heading--task">You will make</h2>
 
 --- task ---
-Create a Python program that randomly splits a group of players into teams with fun team names.
+Create a Python program that randomly splits a group of players into 2 teams with fun team names.
 --- /task ---
 
 <div class="c-project-output">

@@ -6,7 +6,7 @@ Improve your team chooser by adding extra features and bigger goals.
 
 --- task ---
 ### Add more players
-Add lots more players in `players.txt`, then run your program to check it still creates fair teams.
+Add lots more players to your `players` list or `players.txt`, then run your program to check it still creates fair teams.
 --- /task ---
 
 --- task ---
@@ -16,7 +16,7 @@ Change your program so it splits players into **3 teams** (or more!), and try to
 
 --- task ---
 ### No repeats
-Add more team names in `team_names.txt`, and make your program stop with a helpful message if there aren’t enough names for the number of teams you want.
+Add more team names to your `team_names` list or `team_names.txt`, and make your program stop with a helpful message if there aren’t enough names for the number of teams you want.
 --- /task ---
 
 --- task ---
