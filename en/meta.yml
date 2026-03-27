@@ -24,12 +24,12 @@ steps:
   - engaged
 - title: Choose a random player
 - title: Create two teams
+- title: Add random team names
 - title: Split everyone into teams
-- title: Load players from a file
 - title: Handle an odd player
   completion:
   - internal
-- title: Add random team names
+- title: Load players from a file
 - title: Load team names from a file
 - title: Challenges
   completion:

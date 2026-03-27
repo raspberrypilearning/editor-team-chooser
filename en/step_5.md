@@ -5,7 +5,7 @@ Create two empty teams and put one random player into each team.
 --- /task ---
 
 --- task ---
-Create `team_A` and `team_B`, then choose a player for each team and remove them from `players`.
+Keep your `players` list and `choice` import, but replace the old `player` code with `team_A` and `team_B`. Then choose one player for each team and remove them from `players`.
 
 <div class="c-project-code">
 --- code ---
@@ -18,7 +18,7 @@ line_highlights: 5-18
 ---
 from random import choice
 
-players = ['Harry', 'Hermione', 'Neville', 'Ginny', 'Luna', 'Ron']
+players = ['Aisha', 'Kai', 'Linh', 'Mateo', 'Noor', 'Zuri']
 
 team_A = []  # Team A players go here
 team_B = []  # Team B players go here
