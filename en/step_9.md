@@ -1,17 +1,14 @@
-<h2 class="c-project-heading--task">Load players from a file</h2>
+<h2 class="c-project-heading--task">Load team names from a file</h2>
 
---- task ---
-Read player names from `players.txt` instead of writing them inside your code.
---- /task ---
+### Step 1
+After loading players from a file, store team names in `team_names.txt` and load them into your program.
 
---- task ---
-Create a file called `players.txt` and put one player name on each line. Use the same names that were in your `players` list.
-
---- /task ---
+### Step 2
+Create a file called `team_names.txt` and put one team name on each line. Use the same names that were in your `team_names` list.
 
 
---- task ---
-Keep the rest of your program the same. Replace the `players` list with code that reads names from the file using `splitlines()`:
+### Step 3
+Keep the rest of your program the same. Replace the `team_names` list with code that reads `team_names.txt` into a list.
 
 <div class="c-project-code">
 --- code ---
@@ -24,15 +21,19 @@ line_highlights: 8-11
 ---
 from random import choice
 
-team_names = ['Lightning Llamas', 'Pixel Penguins', 'Turbo Tigers', 'Dancing Dragons']
-team_name_A = choice(team_names)
-team_names.remove(team_name_A)
-team_name_B = choice(team_names)
-
 players = []
 file = open('players.txt', 'r')
 players = file.read().splitlines()
 file.close()
+
+team_names = []  # make a list called team_names
+file = open('team_names.txt', 'r')  #  Open the team_names.txt file
+team_names = file.read().splitlines()   # add lines from file into the list
+file.close()
+
+team_name_A = choice(team_names)
+team_names.remove(team_name_A)
+team_name_B = choice(team_names)
 
 team_A = []
 team_B = []
@@ -41,6 +42,7 @@ while len(players) > 0:
     player_A = choice(players)
     team_A.append(player_A)
     players.remove(player_A)
+
     if players == []:
         break
 
@@ -52,9 +54,7 @@ print(team_name_A, team_A)
 print(team_name_B, team_B)
 --- /code ---
 </div>
---- /task ---
 
---- task ---
+### Step 4
 ### Test
-Run the program. If you change the names in `players.txt`, your teams should change too.
---- /task ---
+Edit `team_names.txt` and run again. Your new names should appear in the output.

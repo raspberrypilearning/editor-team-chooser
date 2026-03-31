@@ -1,11 +1,10 @@
-<h2 class="c-project-heading--task">Add more players</h2>
+<h2 class="c-project-heading--task">Choose a random player</h2>
 
---- task ---
-Grow your player list and print one name from it.
---- /task ---
+### Step 1
+Instead of printing a player from one fixed position, pick a random player from your list using `choice`.
 
---- task ---
-Add more names to the list and print just one of them using its position in the list.
+### Step 2
+Keep your `players` list, but replace `print(players[2])` with code that uses `choice` to select and print a random player.
 
 <div class="c-project-code">
 --- code ---
@@ -14,23 +13,16 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 1-2
+line_highlights: 1,4-5
 ---
-players = ['Aisha', 'Kai', 'Linh', 'Mateo', 'Noor', 'Zuri']  # add more players
-print(players[2])  # prints the player in the 3rd position
+from random import choice  # lets you pick a random item from a list
+
+players = ['Aisha', 'Kai', 'Linh', 'Mateo', 'Noor', 'Zuri']
+player = choice(players)  # choose one random player
+print(player)  #  show the chosen player
 --- /code ---
 </div>
 
-<div class="c-project-callout c-project-callout--tip">
-Tip
-
-Lists start counting at 0, so `players[0]` is the first item, `players[1]` is the second, and so on.
-
-</div>
-
---- /task ---
-
---- task ---
+### Step 3
 ### Test
-Run your program. You should see **one name** printed: the name in the 3rd position of your list.
---- /task ---
+Run your program a few times. You should see **different names** appear.

@@ -1,11 +1,10 @@
-<h2 class="c-project-heading--task">Create two teams</h2>
+<h2 class="c-project-heading--task">Add random team names</h2>
 
---- task ---
-Create two empty teams and put one random player into each team.
---- /task ---
+### Step 1
+Now that each team has one player, give each team a fun random name.
 
---- task ---
-Keep your `players` list and `choice` import, but replace the old `player` code with `team_A` and `team_B`. Then choose one player for each team and remove them from `players`.
+### Step 2
+Keep your code from the last step. Add a `team_names` list, choose a different name for each team, and print the team names instead of `Team A` and `Team B`.
 
 <div class="c-project-code">
 --- code ---
@@ -14,31 +13,33 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 5-18
+line_highlights: 8-11,21-22
 ---
 from random import choice
 
 players = ['Aisha', 'Kai', 'Linh', 'Mateo', 'Noor', 'Zuri']
 
-team_A = []  # Team A players go here
-team_B = []  # Team B players go here
+team_A = []
+team_B = []
 
-player_A = choice(players)  # choose a random player for Team A
-team_A.append(player_A)     # add them to Team A
-players.remove(player_A)    # remove them so they can't be picked again
+team_names = ['Lightning Llamas', 'Pixel Penguins', 'Turbo Tigers', 'Dancing Dragons']
+team_name_A = choice(team_names)
+team_names.remove(team_name_A)
+team_name_B = choice(team_names)
 
-player_B = choice(players)  # choose a random player for Team B
-team_B.append(player_B)     # add them to Team B
-players.remove(player_B)    # remove them so they can't be picked again
+player_A = choice(players)
+team_A.append(player_A)
+players.remove(player_A)
 
-print('Team A:', team_A)    # show Team A
-print('Team B:', team_B)    # show Team B
-print('Players left:', players)  # show anyone not yet chosen
+player_B = choice(players)
+team_B.append(player_B)
+players.remove(player_B)
+
+print(team_name_A, team_A)
+print(team_name_B, team_B)
 --- /code ---
 </div>
---- /task ---
 
---- task ---
+### Step 3
 ### Test
-Run the program. You should see **one player in each team**, and fewer players left in the `players` list.
---- /task ---
+Run your program a few times. The team names should change, and the two teams should not get the same name.

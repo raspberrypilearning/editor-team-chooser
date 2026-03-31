@@ -1,11 +1,10 @@
-<h2 class="c-project-heading--task">Create a player list</h2>
+<h2 class="c-project-heading--task">Add more players</h2>
 
---- task ---
-Make a list of player names that your program can choose from.
---- /task ---
+### Step 1
+Grow your player list and print one name from it.
 
---- task ---
-Add a `players` list, then print it so you can check it worked.
+### Step 2
+Add more names to the list and print just one of them using its position in the list.
 
 <div class="c-project-code">
 --- code ---
@@ -16,13 +15,19 @@ line_numbers: true
 line_number_start: 1
 line_highlights: 1-2
 ---
-players = ['Aisha', 'Kai', 'Linh', 'Mateo']  # a list of player names
-print(players)  # check the list prints in the output
+players = ['Aisha', 'Kai', 'Linh', 'Mateo', 'Noor', 'Zuri']  # add more players
+print(players[2])  # prints the player in the 3rd position
 --- /code ---
 </div>
---- /task ---
 
---- task ---
+<div class="c-project-callout c-project-callout--tip">
+Tip
+
+Lists start counting at 0, so `players[0]` is the first item, `players[1]` is the second, and so on.
+
+</div>
+
+
+### Step 3
 ### Test
-Run your program. You should see your list printed, for example `['Aisha', 'Kai', 'Linh', 'Mateo']`.
---- /task ---
+Run your program. You should see **one name** printed: the name in the 3rd position of your list.

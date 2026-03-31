@@ -1,11 +1,15 @@
-<h2 class="c-project-heading--task">Handle an odd player</h2>
+<h2 class="c-project-heading--task">Load players from a file</h2>
 
---- task ---
-Make your program work even if there’s an odd number of players.
---- /task ---
+### Step 1
+Read player names from `players.txt` instead of writing them inside your code.
 
---- task ---
-Keep your `while` loop from the last step. Add one more name to `players` so there’s an odd number of players, then add a check after Team A gets a player so Team B only picks if there are players left.
+### Step 2
+Create a file called `players.txt` and put one player name on each line. Use the same names that were in your `players` list.
+
+
+
+### Step 3
+Keep the rest of your program the same. Replace the `players` list with code that reads names from the file using `splitlines()`:
 
 <div class="c-project-code">
 --- code ---
@@ -14,16 +18,19 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 17-18
+line_highlights: 8-11
 ---
 from random import choice
-
-players = ['Aisha', 'Kai', 'Linh', 'Mateo', 'Noor', 'Zuri', 'Sofia']
 
 team_names = ['Lightning Llamas', 'Pixel Penguins', 'Turbo Tigers', 'Dancing Dragons']
 team_name_A = choice(team_names)
 team_names.remove(team_name_A)
 team_name_B = choice(team_names)
+
+players = []
+file = open('players.txt', 'r')
+players = file.read().splitlines()
+file.close()
 
 team_A = []
 team_B = []
@@ -32,7 +39,7 @@ while len(players) > 0:
     player_A = choice(players)
     team_A.append(player_A)
     players.remove(player_A)
-    if players == []:  # stop if Team A just took the last player
+    if players == []:
         break
 
     player_B = choice(players)
@@ -43,9 +50,7 @@ print(team_name_A, team_A)
 print(team_name_B, team_B)
 --- /code ---
 </div>
---- /task ---
 
---- task ---
+### Step 4
 ### Test
-Run the program with an odd number of players. One team should have **one extra player**, and the program should not crash.
---- /task ---
+Run the program. If you change the names in `players.txt`, your teams should change too.
