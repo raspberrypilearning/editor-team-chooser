@@ -1,11 +1,10 @@
-<h2 class="c-project-heading--task">Split everyone into teams</h2>
+<h2 class="c-project-heading--task">Handle an odd player</h2>
 
---- task ---
-Keep choosing players until everyone is in a team.
---- /task ---
+### Step 1
+Make your program work even if there’s an odd number of players.
 
---- task ---
-Keep the team name code from the last step, but replace the code that picks just one player for each team with a `while` loop. The loop should keep picking players until `players` is empty. For now, keep an **even number** of names in `players`.
+### Step 2
+Keep your `while` loop from the last step. Add one more name to `players` so there’s an odd number of players, then add a check after Team A gets a player so Team B only picks if there are players left.
 
 <div class="c-project-code">
 --- code ---
@@ -14,11 +13,11 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 13-20
+line_highlights: 17-18
 ---
 from random import choice
 
-players = ['Aisha', 'Kai', 'Linh', 'Mateo', 'Noor', 'Zuri']
+players = ['Aisha', 'Kai', 'Linh', 'Mateo', 'Noor', 'Zuri', 'Sofia']
 
 team_names = ['Lightning Llamas', 'Pixel Penguins', 'Turbo Tigers', 'Dancing Dragons']
 team_name_A = choice(team_names)
@@ -32,6 +31,8 @@ while len(players) > 0:
     player_A = choice(players)
     team_A.append(player_A)
     players.remove(player_A)
+    if players == []:  # stop if Team A just took the last player
+        break
 
     player_B = choice(players)
     team_B.append(player_B)
@@ -42,22 +43,6 @@ print(team_name_B, team_B)
 --- /code ---
 </div>
 
-<div class="c-project-callout c-project-callout--tip">
-Tip
-
-Inside a <strong>while</strong> loop, indent the lines you want to repeat (4 spaces) so Python knows they belong to the loop.
-
-</div>
---- /task ---
-
---- task ---
+### Step 3
 ### Test
-Run the program. Every player should appear in **exactly one** of the teams.
-
-<div class="c-project-callout c-project-callout--debug" style="font-size: 1.1em">
-Debug
-
-If you see an `IndexError`, it usually means you have an odd number of players. In the next step, you will fix that.
-
-</div>
---- /task ---
+Run the program with an odd number of players. One team should have **one extra player**, and the program should not crash.

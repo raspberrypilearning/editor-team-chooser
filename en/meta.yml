@@ -16,8 +16,8 @@ hardware: ''
 software: python
 version: 3
 last_tested: 2018-04-05
+landing: true
 steps:
-- title: What you will make
 - title: Create a player list
 - title: Add more players
   completion:
@@ -31,7 +31,7 @@ steps:
   - internal
 - title: Load players from a file
 - title: Load team names from a file
-- title: Challenges
   completion:
   - external
+- title: Challenges
   challenge: true
