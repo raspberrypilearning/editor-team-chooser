@@ -1,9 +1,9 @@
 <h2 class="c-project-heading--task">Create two teams</h2>
 
-### Step 1
 Create two empty teams and put one random player into each team.
 
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 Keep your `players` list and `choice` import, but replace the old `player` code with `team_A` and `team_B`. Then choose one player for each team and remove them from `players`.
 
 <div class="c-project-code">
@@ -36,6 +36,6 @@ print('Players left:', players)  # show anyone not yet chosen
 --- /code ---
 </div>
 
-### Step 3
-### Test
+## Now run your code
+
 Run the program. You should see **one player in each team**, and fewer players left in the `players` list.

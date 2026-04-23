@@ -1,9 +1,9 @@
 <h2 class="c-project-heading--task">Choose a random player</h2>
 
-### Step 1
 Instead of printing a player from one fixed position, pick a random player from your list using `choice`.
 
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 Keep your `players` list, but replace `print(players[2])` with code that uses `choice` to select and print a random player.
 
 <div class="c-project-code">
@@ -23,6 +23,6 @@ print(player)  #  show the chosen player
 --- /code ---
 </div>
 
-### Step 3
-### Test
+## Now run your code
+
 Run your program a few times. You should see **different names** appear.

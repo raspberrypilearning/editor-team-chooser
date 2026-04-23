@@ -1,14 +1,15 @@
 <h2 class="c-project-heading--task">Load players from a file</h2>
 
-### Step 1
 Read player names from `players.txt` instead of writing them inside your code.
 
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
+
 Create a file called `players.txt` and put one player name on each line. Use the same names that were in your `players` list.
 
+## Step 2
 
-
-### Step 3
 Keep the rest of your program the same. Replace the `players` list with code that reads names from the file using `splitlines()`:
 
 <div class="c-project-code">
@@ -51,6 +52,6 @@ print(team_name_B, team_B)
 --- /code ---
 </div>
 
-### Step 4
-### Test
+## Now run your code
+
 Run the program. If you change the names in `players.txt`, your teams should change too.
