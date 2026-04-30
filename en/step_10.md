@@ -1,26 +1,31 @@
 <h2 class="c-project-heading--task">Challenges</h2>
 
-### Step 1
 Improve your team chooser by adding extra features and bigger goals.
 
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
+
 ### Add more players
 Add lots more players to your `players` list or `players.txt`, then run your program to check it still creates fair teams.
 
-### Step 3
+## Step 2
+
 ### More teams
 Change your program so it splits players into **3 teams** (or more!), and try to keep the teams as even as possible.
 
-### Step 4
+## Step 3
+
 ### No repeats
 Add more team names to your `team_names` list or `team_names.txt`, and make your program stop with a helpful message if there aren’t enough names for the number of teams you want.
 
-### Step 5
+## Step 4
+
 ### Make it friendlier
 Print your teams in a neat way (for example, one player per line), and add headings so the output is easy to read.
 
-### Step 6
-### Test
+## Now run your code
+
 After your changes, run the program several times:
 - Teams should still be random
 - No player should appear in more than one team

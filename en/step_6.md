@@ -1,9 +1,9 @@
 <h2 class="c-project-heading--task">Split everyone into teams</h2>
 
-### Step 1
 Keep choosing players until everyone is in a team.
 
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 Keep the team name code from the last step, but replace the code that picks just one player for each team with a `while` loop. The loop should keep picking players until `players` is empty. For now, keep an **even number** of names in `players`.
 
 <div class="c-project-code">
@@ -48,8 +48,8 @@ Inside a <strong>while</strong> loop, indent the lines you want to repeat (4 spa
 
 </div>
 
-### Step 3
-### Test
+## Now run your code
+
 Run the program. Every player should appear in **exactly one** of the teams.
 
 <div class="c-project-callout c-project-callout--debug" style="font-size: 1.1em">

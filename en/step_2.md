@@ -1,9 +1,9 @@
 <h2 class="c-project-heading--task">Add more players</h2>
 
-### Step 1
 Grow your player list and print one name from it.
 
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 Add more names to the list and print just one of them using its position in the list.
 
 <div class="c-project-code">
@@ -27,7 +27,6 @@ Lists start counting at 0, so `players[0]` is the first item, `players[1]` is th
 
 </div>
 
+## Now run your code
 
-### Step 3
-### Test
 Run your program. You should see **one name** printed: the name in the 3rd position of your list.

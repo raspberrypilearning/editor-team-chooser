@@ -1,9 +1,9 @@
 <h2 class="c-project-heading--task">Create a player list</h2>
 
-### Step 1
 Make a list of player names that your program can choose from.
 
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 Add a `players` list, then print it so you can check it worked.
 
 <div class="c-project-code">
@@ -20,6 +20,6 @@ print(players)  # check the list prints in the output
 --- /code ---
 </div>
 
-### Step 3
-### Test
+## Now run your code
+
 Run your program. You should see your list printed, for example `['Aisha', 'Kai', 'Linh', 'Mateo']`.

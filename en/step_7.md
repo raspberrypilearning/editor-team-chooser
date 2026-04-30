@@ -1,9 +1,9 @@
 <h2 class="c-project-heading--task">Handle an odd player</h2>
 
-### Step 1
 Make your program work even if there’s an odd number of players.
 
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 Keep your `while` loop from the last step. Add one more name to `players` so there’s an odd number of players, then add a check after Team A gets a player so Team B only picks if there are players left.
 
 <div class="c-project-code">
@@ -43,6 +43,6 @@ print(team_name_B, team_B)
 --- /code ---
 </div>
 
-### Step 3
-### Test
+## Now run your code
+
 Run the program with an odd number of players. One team should have **one extra player**, and the program should not crash.

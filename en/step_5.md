@@ -1,9 +1,9 @@
 <h2 class="c-project-heading--task">Add random team names</h2>
 
-### Step 1
 Now that each team has one player, give each team a fun random name.
 
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
 Keep your code from the last step. Add a `team_names` list, choose a different name for each team, and print the team names instead of `Team A` and `Team B`.
 
 <div class="c-project-code">
@@ -40,6 +40,6 @@ print(team_name_B, team_B)
 --- /code ---
 </div>
 
-### Step 3
-### Test
+## Now run your code
+
 Run your program a few times. The team names should change, and the two teams should not get the same name.
