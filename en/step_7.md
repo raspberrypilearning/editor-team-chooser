@@ -2,8 +2,6 @@
 
 Make your program work even if there’s an odd number of players.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Keep your `while` loop from the last step. Add one more name to `players` so there’s an odd number of players, then add a check after Team A gets a player so Team B only picks if there are players left.
 
 <div class="c-project-code">

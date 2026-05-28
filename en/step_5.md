@@ -2,8 +2,6 @@
 
 Now that each team has one player, give each team a fun random name.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Keep your code from the last step. Add a `team_names` list, choose a different name for each team, and print the team names instead of `Team A` and `Team B`.
 
 <div class="c-project-code">

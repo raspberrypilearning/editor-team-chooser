@@ -2,8 +2,6 @@
 
 Grow your player list and print one name from it.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Add more names to the list and print just one of them using its position in the list.
 
 <div class="c-project-code">
