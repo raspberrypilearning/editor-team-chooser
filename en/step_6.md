@@ -2,8 +2,6 @@
 
 Keep choosing players until everyone is in a team.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Keep the team name code from the last step, but replace the code that picks just one player for each team with a `while` loop. The loop should keep picking players until `players` is empty. For now, keep an **even number** of names in `players`.
 
 <div class="c-project-code">
