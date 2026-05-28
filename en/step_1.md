@@ -2,8 +2,6 @@
 
 Make a list of player names that your program can choose from.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Add a `players` list, then print it so you can check it worked.
 
 <div class="c-project-code">
