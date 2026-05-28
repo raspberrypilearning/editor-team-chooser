@@ -2,8 +2,6 @@
 
 Read player names from `players.txt` instead of writing them inside your code.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
 
 Create a file called `players.txt` and put one player name on each line. Use the same names that were in your `players` list.
