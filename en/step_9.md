@@ -2,8 +2,6 @@
 
 After loading players from a file, store team names in `team_names.txt` and load them into your program.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
 
 Create a file called `team_names.txt` and put one team name on each line. Use the same names that were in your `team_names` list.
