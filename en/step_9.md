@@ -1,6 +1,6 @@
 <h2 class="c-project-heading--task">Load team names from a file</h2>
 
-After loading players from a file, store team names in `team_names.txt` and load them into your program.
+Just like loading players from a file, store your team names in `team_names.txt` and load them into your program.
 
 ## Step 1
 
@@ -57,4 +57,4 @@ print(team_name_B, team_B)
 
 ## Now run your code
 
-Edit `team_names.txt` and run again. Your new names should appear in the output.
+Change the names in `team_names.txt` and run it again. Your new names should appear in the output.
