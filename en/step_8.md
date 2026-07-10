@@ -1,4 +1,4 @@
-<h2 class="c-project-heading--task">Load players from a file</h2>
+## Load players from a file
 
 Read player names from `players.txt` instead of writing them inside your code.
 
@@ -10,15 +10,7 @@ Create a file called `players.txt` and put one player name on each line. Use the
 
 Keep the rest of your program the same. Replace the `players` list with code that reads names from the file using `splitlines()`:
 
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 1
-line_highlights: 8-11
----
+```python filename="main.py" line_numbers="true" line_number_start="1" line_highlights="8-11"
 from random import choice
 
 team_names = ['Lightning Llamas', 'Pixel Penguins', 'Turbo Tigers', 'Dancing Dragons']
@@ -47,8 +39,7 @@ while len(players) > 0:
 
 print(team_name_A, team_A)
 print(team_name_B, team_B)
---- /code ---
-</div>
+```
 
 ## Now run your code
 

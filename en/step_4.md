@@ -1,18 +1,10 @@
-<h2 class="c-project-heading--task">Create two teams</h2>
+## Create two teams
 
 Create two empty teams and put one random player into each team.
 
 Keep your `players` list and `choice` import, but replace the old `player` code with `team_A` and `team_B`. Then choose one player for each team and remove them from `players`.
 
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 1
-line_highlights: 5-18
----
+```python filename="main.py" line_numbers="true" line_number_start="1" line_highlights="5-18"
 from random import choice
 
 players = ['Aisha', 'Kai', 'Linh', 'Mateo', 'Noor', 'Zuri']
@@ -31,8 +23,7 @@ players.remove(player_B)    # remove them so they can't be picked again
 print('Team A:', team_A)    # show Team A
 print('Team B:', team_B)    # show Team B
 print('Players left:', players)  # show anyone not yet chosen
---- /code ---
-</div>
+```
 
 ## Now run your code
 

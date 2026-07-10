@@ -1,18 +1,10 @@
-<h2 class="c-project-heading--task">Handle an odd player</h2>
+## Handle an odd player
 
 Make your program work even if there’s an odd number of players.
 
 Keep your `while` loop from the last step. Add one more name to `players` so there’s an odd number of players, then add a check after Team A gets a player so Team B only picks if there are players left.
 
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 1
-line_highlights: 17-18
----
+```python filename="main.py" line_numbers="true" line_number_start="1" line_highlights="17-18"
 from random import choice
 
 players = ['Aisha', 'Kai', 'Linh', 'Mateo', 'Noor', 'Zuri', 'Sofia']
@@ -38,8 +30,7 @@ while len(players) > 0:
 
 print(team_name_A, team_A)
 print(team_name_B, team_B)
---- /code ---
-</div>
+```
 
 ## Now run your code
 
