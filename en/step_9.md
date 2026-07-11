@@ -1,4 +1,4 @@
-<h2 class="c-project-heading--task">Load team names from a file</h2>
+## Load team names from a file
 
 Just like loading players from a file, store your team names in `team_names.txt` and load them into your program.
 
@@ -10,15 +10,7 @@ Create a file called `team_names.txt` and put one team name on each line. Use th
 
 Keep the rest of your program the same. Replace the `team_names` list with code that reads `team_names.txt` into a list.
 
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 1
-line_highlights: 8-11
----
+```python filename="main.py" line_numbers="true" line_number_start="1" line_highlights="8-11"
 from random import choice
 
 players = []
@@ -52,8 +44,7 @@ while len(players) > 0:
 
 print(team_name_A, team_A)
 print(team_name_B, team_B)
---- /code ---
-</div>
+```
 
 ## Now run your code
 

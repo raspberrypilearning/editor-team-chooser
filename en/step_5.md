@@ -1,18 +1,10 @@
-<h2 class="c-project-heading--task">Add random team names</h2>
+## Add random team names
 
 Now that each team has one player, give each team a fun random name.
 
 Keep your code from the last step. Add a `team_names` list, choose a different name for each team, and print the team names instead of `Team A` and `Team B`.
 
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 1
-line_highlights: 8-11,21-22
----
+```python filename="main.py" line_numbers="true" line_number_start="1" line_highlights="8-11,21-22"
 from random import choice
 
 players = ['Aisha', 'Kai', 'Linh', 'Mateo', 'Noor', 'Zuri']
@@ -35,8 +27,7 @@ players.remove(player_B)
 
 print(team_name_A, team_A)
 print(team_name_B, team_B)
---- /code ---
-</div>
+```
 
 ## Now run your code
 
