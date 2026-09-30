@@ -1,3 +1,4 @@
 name: 'Team Chooser Solution'
 identifier: 'editor-team-chooser-solution'
 type: 'python'
+build: true
